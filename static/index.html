@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Employee Onboarding</title>
+  <meta name="description" content="Data collection form for onboarding a new employee.">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header class="hero">
+    <p class="hero-kicker">New employee joining</p>
+    <h1>Employee Onboarding</h1>
+    <p class="tagline">
+      Collect the details we need to onboard a new member of the team.
+      Fields marked <span class="req">*</span> are required.
+    </p>
+  </header>
+
+  <main>
+    <section class="card" id="onboarding-card">
+      <h2>Employee details</h2>
+      <form id="onboarding-form" novalidate>
+        <label for="emp-name">Full name <span class="req">*</span></label>
+        <input id="emp-name" name="full_name" type="text" maxlength="120" required autocomplete="name">
+
+        <label for="emp-email">Personal email <span class="req">*</span></label>
+        <input id="emp-email" name="email" type="email" maxlength="254" required autocomplete="email">
+
+        <label for="emp-phone">Phone <span class="req">*</span></label>
+        <input id="emp-phone" name="phone" type="tel" maxlength="40" required autocomplete="tel">
+
+        <label for="emp-job-title">Job title <span class="req">*</span></label>
+        <input id="emp-job-title" name="job_title" type="text" maxlength="120" required autocomplete="organization-title">
+
+        <label for="emp-department">Department <span class="req">*</span></label>
+        <select id="emp-department" name="department" required>
+          <option value="" disabled selected>Select a department</option>
+          <option>Engineering</option>
+          <option>Sales</option>
+          <option>Marketing</option>
+          <option>HR</option>
+          <option>Finance</option>
+          <option>Operations</option>
+          <option>Other</option>
+        </select>
+
+        <label for="emp-start-date">Start date <span class="req">*</span></label>
+        <input id="emp-start-date" name="start_date" type="date" required>
+
+        <label for="emp-employment-type">Employment type <span class="req">*</span></label>
+        <select id="emp-employment-type" name="employment_type" required>
+          <option value="" disabled selected>Select employment type</option>
+          <option>Full-time</option>
+          <option>Part-time</option>
+          <option>Contract</option>
+        </select>
+
+        <label for="emp-address">Address <span class="opt">(optional)</span></label>
+        <textarea id="emp-address" name="address" rows="2" maxlength="240" autocomplete="street-address"></textarea>
+
+        <label for="emp-ec-name">Emergency contact name <span class="opt">(optional)</span></label>
+        <input id="emp-ec-name" name="emergency_contact_name" type="text" maxlength="120">
+
+        <label for="emp-ec-phone">Emergency contact phone <span class="opt">(optional)</span></label>
+        <input id="emp-ec-phone" name="emergency_contact_phone" type="tel" maxlength="40">
+
+        <label for="emp-notes">Notes <span class="opt">(optional)</span></label>
+        <textarea id="emp-notes" name="notes" rows="4" maxlength="500"></textarea>
+
+        <p class="form-error" id="form-error" hidden></p>
+        <p class="form-note" id="form-note" hidden></p>
+        <button type="submit">Onboard employee</button>
+      </form>
+    </section>
+
+    <section id="employees-section">
+      <h2 id="employees-count">Loading onboarded employees&hellip;</h2>
+      <div id="employees-list"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Employee Onboarding &mdash; new joiner data collection.</p>
+  </footer>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
