@@ -45,6 +45,9 @@
           <option>Other</option>
         </select>
 
+        <label for="emp-start-date">Start date <span class="req">*</span></label>
+        <input id="emp-start-date" name="start_date" type="date" required>
+
         <label for="emp-employment-type">Employment type <span class="req">*</span></label>
         <select id="emp-employment-type" name="employment_type" required>
           <option value="" disabled selected>Select employment type</option>
@@ -52,9 +55,6 @@
           <option>Part-time</option>
           <option>Contract</option>
         </select>
-
-        <label for="emp-start-date">Start date <span class="req">*</span></label>
-        <input id="emp-start-date" name="start_date" type="date" required>
 
         <label for="emp-address">Address <span class="opt">(optional)</span></label>
         <textarea id="emp-address" name="address" rows="2" maxlength="240" autocomplete="street-address"></textarea>

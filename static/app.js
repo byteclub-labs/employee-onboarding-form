@@ -73,11 +73,11 @@
     if (DEPARTMENTS.indexOf(payload.department) === -1) {
       return "Please choose a department from the list.";
     }
-    if (EMPLOYMENT_TYPES.indexOf(payload.employment_type) === -1) {
-      return "Please choose an employment type from the list.";
-    }
     if (!isRealDate(payload.start_date)) {
       return "A valid start date is required.";
+    }
+    if (EMPLOYMENT_TYPES.indexOf(payload.employment_type) === -1) {
+      return "Please choose an employment type from the list.";
     }
     return "";
   }
@@ -92,8 +92,8 @@
       phone: document.getElementById("emp-phone").value.trim(),
       job_title: document.getElementById("emp-job-title").value.trim(),
       department: document.getElementById("emp-department").value,
-      employment_type: document.getElementById("emp-employment-type").value,
       start_date: document.getElementById("emp-start-date").value,
+      employment_type: document.getElementById("emp-employment-type").value,
       address: document.getElementById("emp-address").value.trim(),
       emergency_contact_name: document.getElementById("emp-ec-name").value.trim(),
       emergency_contact_phone: document.getElementById("emp-ec-phone").value.trim(),
