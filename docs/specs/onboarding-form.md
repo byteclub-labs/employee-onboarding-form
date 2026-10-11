@@ -54,7 +54,7 @@ NONE — resolved by the PO by mirroring the prior factory attempt's product beh
 
 - `BRANCH: devin/1791694335-factory-onboarding-form`
 - `FILE: docs/specs/onboarding-form.md`
-- `COMMIT: https://github.com/byteclub-labs/employee-onboarding-form/commit/67d55a2`
+- `COMMIT: https://github.com/byteclub-labs/employee-onboarding-form/commit/6fab659`
 
 ### STATUS
 
