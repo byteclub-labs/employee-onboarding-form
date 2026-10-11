@@ -54,7 +54,7 @@ NONE — resolved by PO: submissions persist to a shared SQLite store (not brows
 
 - `BRANCH: devin/1791689671-factory-onboarding-form`
 - `FILE: docs/specs/onboarding-form.md`
-- `COMMIT: https://github.com/byteclub-labs/employee-onboarding-form/commit/PENDING`
+- `COMMIT: https://github.com/byteclub-labs/employee-onboarding-form/commit/17d08cf`
 
 ### STATUS
 
