@@ -109,6 +109,8 @@
     postJSON("/api/employees", payload)
       .then(function () {
         form.reset();
+        document.getElementById("emp-department").selectedIndex = 0;
+        document.getElementById("emp-employment-type").selectedIndex = 0;
         show(formNote, "Employee onboarded.");
         loadEmployees();
       })

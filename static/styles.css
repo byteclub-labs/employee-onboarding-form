@@ -162,6 +162,7 @@ button:disabled {
   border-radius: 10px;
   padding: 16px 20px;
   margin: 12px 0;
+  overflow-wrap: anywhere;
 }
 
 .employee-meta {
